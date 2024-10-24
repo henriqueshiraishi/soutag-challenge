@@ -8,7 +8,6 @@ RSpec.describe PriceService do
   let(:user) { { id: 1, birthday_month: 5 } }
 
   it 'calculates the total price' do
-    service = PriceService.new(product: product, user: user)
     expect(call).to eq(100.0)
   end
 
